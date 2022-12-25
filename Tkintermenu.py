@@ -1,6 +1,7 @@
 """
 
 Criando um menu janela no tkinter
+https://icon-icons.com/pt/pacotes-de-icones
 
 """
 
