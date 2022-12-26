@@ -1,0 +1,78 @@
+"""
+Label e widget
+
+# sistema RGB
+# RGB 00.00.00 / 00.ff.FF / 0 e f significa inexistencia da cor, FF total presença
+# relief:  flat, raised, sunken, ridge, grove e solid
+
+"""
+
+from tkinter import *
+
+menuInicial = Tk()
+menuInicial.title("Nome da janelinha")
+menuInicial.geometry("300x250+0+0")
+
+
+label1 = Label(
+    menuInicial, 
+        text = "FLAT", 
+        bg = "#000080",
+        fg = "#00ffff",
+        font = "Times 12 italic", 
+        bd = 10, 
+        relief="flat"
+).pack()
+
+label1 = Label(
+    menuInicial, 
+        text = "RAISED", 
+        bg = "#000080",
+        fg = "#00ffff",
+        font = "Times 12 italic", 
+        bd = 10, 
+        relief="raised"
+).pack()
+
+label1 = Label(
+    menuInicial, 
+        text = "SUNKEN", 
+        bg = "#000080",
+        fg = "#00ffff",
+        font = "Times 12 italic", 
+        bd = 10, 
+        relief="sunken"
+).pack()
+
+label1 = Label(
+    menuInicial, 
+        text = "RIDGE", 
+        bg = "#000080",
+        fg = "#00ffff",
+        font = "Times 12 italic", 
+        bd = 10, 
+        relief="ridge"
+).pack()
+
+label1 = Label(
+    menuInicial, 
+        text = "GROOVE", 
+        bg = "#000080",
+        fg = "#00ffff",
+        font = "Times 12 italic", 
+        bd = 10, 
+        relief="groove"
+).pack()
+
+label1 = Label(
+    menuInicial, 
+        text = "SOLID", 
+        bg = "#000080",
+        fg = "#00ffff",
+        font = "Times 12 italic", 
+        bd = 10, 
+        relief="solid"
+).pack()
+
+
+menuInicial.mainloop()
