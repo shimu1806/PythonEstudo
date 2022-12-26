@@ -1,0 +1,88 @@
+"""
+Label e widget
+
+# sistema RGB
+# RGB 00.00.00 / 00.ff.FF / 0 e f significa inexistencia da cor, FF total presença
+# relief:  flat, raised, sunken, ridge, grove e solid
+
+"""
+
+from tkinter import *
+
+menuInicial = Tk()
+menuInicial.title("Nome da janelinha")
+menuInicial.geometry("300x250+0+0")
+menuInicial['bg'] = "blue"
+
+
+label1 = Label(
+    menuInicial, 
+        text = "Label 1 online.\nSegunda linha ainda do Label 1", 
+        bg = "#000080", # definindo cores
+        fg = "#00ffff", # fg é a cor da fonte
+        font = "Times 12 italic", # da pra definir a fonte, tamanho e detalhe na mesma linha de commando
+        bd = 1, # borderwidth
+        relief="solid" # define que a bd será uma linha continua
+)#.pack()
+# label1.pack()
+
+label2 = Label(
+    menuInicial,
+        text = "Label 2 online.",
+        bg = "#000080", # definindo cores
+        fg = "#00ffff", # fg é a cor da fonte
+        font = "Arial 18 bold"
+)
+        
+# label2.pack()
+
+label3 = Label(
+    menuInicial,
+        text = ("Definindo tamanho\nsegunda linha do mano label3"),
+        font = ("Arian 14 bold"),
+        bg = "#FF0000",
+        fg = ("#aaaaaa"),
+        width = 25, # defindo a largura
+        height = 2 # definndo altura, lembrando que é por linha 
+)
+
+label4 = Label(
+    menuInicial,
+        text = "Padding\nAjustando tamanhos",
+        font = "Times 12",
+        bg = "#FF0000",
+        fg = ("#aaaaaa"),
+        bd = 5,
+        relief = "groove",
+        padx = 50,
+        pady = 15, # pad define tamanho também, porém, ao invés de ser por linhas, é por pixels
+        anchor = W, # define onde o OBEJTO DO texto será alinhado, sendo "N" norte, "W" esquerda, "E" direita, "S" abaixo. Da para utlizaros juntos, como WE, NW e etc
+        justify = LEFT # define onde o texto será alinhado, left, right, or center
+)
+
+
+butao = Button(
+    menuInicial, 
+        text = "Buta1",
+        bg = "#00ffff", # definindo cores
+        fg = "#000080", # fg é a cor da fonte
+        font = "Verdana 20 bold italic",
+        command=lambda: print("bota online"),
+        bd = 8,
+        relief = "sunken", # flat, raised, sunken, ridge, grove e solid
+)
+# butao.pack()
+
+
+ # ordem das funções
+
+butao.pack()
+label1.pack()
+label2.pack()
+label3.pack()
+label4.pack()
+
+
+
+
+menuInicial.mainloop()
