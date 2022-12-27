@@ -3,7 +3,7 @@ Label e widget
 
 # sistema RGB
 # RGB 00.00.00 / 00.ff.FF / 0 e f significa inexistencia da cor, FF total presença
-# relief:  flat, raised, sunken, ridge, grove e solid
+# relief:  flat, raised, sunken, ridge, groove e solid
 
 """
 
