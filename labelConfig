@@ -1,0 +1,70 @@
+
+from tkinter import *
+
+
+menuInicial = Tk()
+menuInicial.state("zoomed")
+menuInicial.title("Nome da janelinha")
+menuInicial.geometry("500x500")
+menuInicial['bg'] = "grey"
+
+palavra = StringVar()
+palavra.set("Novo nome")
+
+texto1 = Label(
+    menuInicial, 
+    textvariable= palavra,
+    font="verdana 12",
+    bg="black",
+    fg="red"
+) # .pack()
+
+texto2 = Label(
+    menuInicial, 
+    textvariable= palavra,
+    font="verdana 12",
+    bg="green",
+    fg="red"
+)
+
+texto3 = Label(
+    menuInicial, 
+    textvariable= palavra,
+    font="verdana 12",
+    bg="blue",
+    fg="red"
+)
+
+Btn = Button(
+    menuInicial,
+    text= "ROOCK"
+)
+Btn2 = Button(
+    menuInicial,
+    text= "ROOCKLKKKKKK"
+)
+Btn3 = Button(
+    menuInicial,
+    text= "ROOCKFGDFGDGFDFGD"
+)
+
+# Para alterar dado
+palavra.set("DOR NAS COSTA")
+
+
+# mostrando todas as funções possíveis para utilizar com o var "texto1"
+
+for item in texto1.keys():
+    print(item, " : ", texto1[item])
+
+
+texto1.grid(row = 0, column = 0)
+texto2.grid(row = 0, column = 1)
+texto3.grid(row = 0, column = 2)
+
+Btn.grid(row = 1, column = 0)
+Btn2.grid(row = 1, column = 1)
+Btn3.grid(row = 1, column = 2)
+
+
+menuInicial.mainloop()
